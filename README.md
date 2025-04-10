@@ -23,3 +23,8 @@ Desktop: Open the app, it should show your peer ID and connected nodes.
 
 
 # FILE UPLOADING
+1. I clicked on the file selection in IPFS desktop.
+2. Then i selected the option "import" and uploaded a  sample file and music also.
+3. Once the file was uploaded, IPFS generate a unique CID(content indentifier) for the file
+
+   ![Screenshot 2025-04-10 113433](https://github.com/user-attachments/assets/82311470-ef31-4eea-9a42-0f1fdff48bac)
