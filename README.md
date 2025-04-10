@@ -69,7 +69,9 @@ Network: sepolia testent amount sent: 0.02ETH Transaction hash: 0x7a95585dd38725
 
 #HYPERLEDGER FABRIC PRACTICAL 
 1. installing golang
+   
    ```sudo apt install golang-go```
+   
 Installs Golang, which is necessary for running Hyperledger Fabric binaries.
 ![IMG-20250410-WA0029](https://github.com/user-attachments/assets/9e5cbeb1-5188-4964-afd4-069cd9876f22)
 3. Check Docker version
