@@ -153,6 +153,8 @@ Stops all containers and deletes the crypto material and artifacts created durin
 ![Screenshot 2025-04-16 132938](https://github.com/user-attachments/assets/5722ca1c-f5d2-430d-af8f-6f05f69c23d1)
 
 #solidity
+
+
 #1. Use Remix (Beginner-Friendly, No Setup Needed)
 Go to  https://remix.ethereum.org
 
@@ -168,8 +170,8 @@ contract HelloWorld {
     function setMessage(string memory _message) public {
         message = _message;
     }
-}```
-
+}
+```
 In Remix:
 
 Click File Explorer → Create new file → name it HelloWorld.sol
@@ -182,11 +184,14 @@ Go to Deploy & Run Transactions → Deploy the contract
 
 Use the UI to call setMessage() or read message
 
+
+
+
 #2. Install Hardhat (For Local Dev with Node.js)
 If you want to build real projects:
 ```npm install --save-dev hardhat
-npx hardhat```
-
+npx hardhat
+```
 Choose "Create a basic sample project".
 
 Then you can:
@@ -198,6 +203,12 @@ Write tests in test/
 Deploy using scripts in scripts/
 
 ✅ Hardhat also supports local Ethereum nodes (Hardhat Network) and real testnets.
+
+
+
+
+
+
 
 #3. Use MetaMask for Deployments to Testnet
 Install MetaMask, create a wallet, and connect to a testnet like Goerli or Sepolia. You’ll need free test ETH from a faucet (I can help with that too).
