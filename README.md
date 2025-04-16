@@ -73,17 +73,20 @@ Network: sepolia testent amount sent: 0.02ETH Transaction hash: 0x7a95585dd38725
    ```sudo apt install golang-go```
    
 Installs Golang, which is necessary for running Hyperledger Fabric binaries.
-![IMG-20250410-WA0029](https://github.com/user-attachments/assets/9e5cbeb1-5188-4964-afd4-069cd9876f22)
+![Screenshot 2025-04-16 102328](https://github.com/user-attachments/assets/ed04f672-42e1-4339-8f88-ccaae2e6dfb9)
+
 3. Check Docker version
    ```docker --version```
    Verifies that Docker is installed and running correctly.
 
-   ![IMG-20250410-WA0030](https://github.com/user-attachments/assets/67e06341-ac4e-4cf9-a765-d27f49f45cb1)
+   ![Screenshot 2025-04-16 103341](https://github.com/user-attachments/assets/15740a40-31e4-4f04-964d-a455761430ec)
+
 
 4. Check Docker compose version
 ```docker -compose  --version```
 Verifies the installation of Docker Compose.
-![IMG-20250410-WA0037](https://github.com/user-attachments/assets/50f1494c-ac9a-4790-bc3e-bce1bed9d2c1)
+![Screenshot 2025-04-16 103419](https://github.com/user-attachments/assets/87c8d15b-e8ae-4202-9782-77e3af4da03d)
+
 
 
 5. List Files in current dictionary
@@ -97,7 +100,8 @@ Verifies the installation of Docker Compose.
 Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cloned folder where Fabric examples are available.
 
 
-![IMG-20250410-WA0038](https://github.com/user-attachments/assets/e2dea4c9-906c-4706-ab73-0939bda4e1a5)
+![Screenshot 2025-04-16 104000](https://github.com/user-attachments/assets/36606832-000b-4d91-86a4-cef29f5abb98)
+
 
 6. Download Fabric Binaries
 ```  curl -sSL https://bit.ly/2ysbOFE | bash -s```
@@ -105,7 +109,9 @@ Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cl
 
 Downloads necessary Fabric binaries and Docker images like peer, orderer, and cryptogen.
 
-![IMG-20250410-WA0039](https://github.com/user-attachments/assets/b9e727c2-dff7-4699-9b09-4be31597d665)
+
+![Screenshot 2025-04-16 130952](https://github.com/user-attachments/assets/b1a3a5d8-78f7-46cc-a90c-faf92bbeb160)
+
 
 
 7.Enter the Test Network Directory
@@ -113,7 +119,6 @@ Downloads necessary Fabric binaries and Docker images like peer, orderer, and cr
 ```cd test-network```
 Navigates to the directory that contains scripts for running a sample Fabric network.
 
-![IMG-20250410-WA0040](https://github.com/user-attachments/assets/50f94f69-874d-4017-9171-d0eca95c7660)
 
 8. View the Network Script
 ```./network.sh```
@@ -124,17 +129,25 @@ Shows the options available with the network.sh script.
 ```./network.sh up```
 Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
 
-![IMG-20250410-WA0041](https://github.com/user-attachments/assets/d08c71dc-640c-42a7-bfb4-220f370aa317)
+
+
+
+
 
 10.Create a Channel
 ```./network.sh createChannel```
 Creates a default channel (usually named mychannel) and joins the peers to it.
 
 
-![IMG-20250410-WA0042](https://github.com/user-attachments/assets/8f87dc9d-9e5c-4db2-abb3-616f1c8539d8)
+
+![Screenshot 2025-04-16 132703](https://github.com/user-attachments/assets/3c137537-53f8-4a4c-bf8a-18196289e5e0)
+
 11. Shut Down the Network
 ```./network.sh down```
 Stops all containers and deletes the crypto material and artifacts created during the setup.
 
-![IMG-20250410-WA0045](https://github.com/user-attachments/assets/838ecc92-1584-4215-8e6e-f6ef6e399f08)
+
+
+![Screenshot 2025-04-16 132938](https://github.com/user-attachments/assets/5722ca1c-f5d2-430d-af8f-6f05f69c23d1)
+
 
