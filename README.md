@@ -125,6 +125,8 @@ Navigates to the directory that contains scripts for running a sample Fabric net
 Shows the options available with the network.sh script.
 
 
+![Screenshot 2025-04-16 133627](https://github.com/user-attachments/assets/246ece54-e75d-40fc-bf36-16f88b255c82)
+
 10. Start the Fabric Network
 ```./network.sh up```
 Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
