@@ -80,6 +80,8 @@ cat decrypted.txt
 ```
 ~/.local/bin/ipfs add decrypted.txt
 ```
+![WhatsApp Image 2025-04-21 at 14 44 51_b088d58e](https://github.com/user-attachments/assets/21c80cd0-af32-4a47-ab0d-b6cac0fd7d0f)
+
 
 # BLOCKCHAIN PRACTICAL METAMASK WALLLET
 
