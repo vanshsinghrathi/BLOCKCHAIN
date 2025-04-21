@@ -29,6 +29,57 @@ Desktop: Open the app, it should show your peer ID and connected nodes.
 
    ![Screenshot 2025-04-10 113433](https://github.com/user-attachments/assets/82311470-ef31-4eea-9a42-0f1fdff48bac)
 
+## Encrypting and decrypting
+
+1) Download IPFS CLI:
+```
+wget https://dist.ipfs.tech/go-ipfs/v0.22.0/go-ipfs_v0.22.0_linux-amd64.tar.gz
+```
+2) Extract the tar file:
+```
+tar -xvzf go-ipfs_v0.22.0_linux-amd64.tar.gz
+```
+3) Install IPFS:
+```
+cd go-ipfs
+./install.sh
+```
+4) Initialize IPFS Node:
+```
+~/.local/bin/ipfs init
+```
+5) Start IPFS Daemon:
+```
+~/.local/bin/ipfs daemon
+```
+6) Create a sample file:
+```
+echo "hello, IPFS!" > hello.txt
+```
+7) Add original file to IPFS:
+```
+~/.local/bin/ipfs add hello.txt
+```
+8) Encrypt the file using OpenSSL:
+```
+openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in hello.txt -out hello.enc
+```
+9) Upload the encrypted file to IPFS:
+```
+~/.local/bin/ipfs add hello.enc
+```
+10) Decrypt the file:
+```
+openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in retrieved.enc -out decrypted.txt
+```
+11) See decrypted content:
+```
+cat decrypted.txt
+```
+12) Add decrypted file to IPFS:
+```
+~/.local/bin/ipfs add decrypted.txt
+```
 
 # BLOCKCHAIN PRACTICAL METAMASK WALLLET
 
