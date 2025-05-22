@@ -1,3 +1,4 @@
+## sec practical
 # HOW TO DOWNLOAD IPFS
 🔹 Step 1: Go to the official website
 Visit: https://docs.ipfs.tech/install/ipfs-desktop/
